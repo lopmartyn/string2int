@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace String2Int
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string res = string.Empty;
+            Console.Write("Please input your values: ");
+            string inp = Console.ReadLine();
+            for (int i = 0; i < inp.Length; i++)
+            {
+                if (inp[i] >= '0' && inp[i] <= '9')
+                {
+                    res += inp[i].ToString();
+                }
+            }
+            Console.WriteLine("Result is: " + res);
+            Console.ReadKey();
+        }
+    }
+}
